@@ -32,9 +32,9 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
-        <Link to="/" className="text-lg font-semibold">
-          <img src={logo} alt={logo} />
-          Nuvantage
+        <Link to="/" className="flex items-center gap-2">
+          <img src={logo} alt="Nuvantage logo" className="w-6 h-6" />
+          <span className="font-semibold text-lg">Nuvantage</span>
         </Link>
 
         {/* Desktop Nav */}
