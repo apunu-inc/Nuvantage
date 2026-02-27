@@ -1,6 +1,8 @@
+import AnimatedSection from "./AnimatedSection";
+
 export default function CTA() {
   return (
-    <section className="py-20 bg-gray-50">
+    <AnimatedSection className="bg-gray-50 py-20">
       <div className="max-w-5xl mx-auto px-6">
         <div className="bg-gray-200 rounded-2xl p-12 text-center relative">
           <h3 className="text-2xl font-semibold">
@@ -17,6 +19,6 @@ export default function CTA() {
           </button>
         </div>
       </div>
-    </section>
+    </AnimatedSection>
   );
 }

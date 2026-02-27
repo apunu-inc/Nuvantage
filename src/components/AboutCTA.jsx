@@ -1,6 +1,8 @@
+import AnimatedSection from "./AnimatedSection";
+
 export default function AboutCTA() {
   return (
-    <section className="py-24 bg-gray-100">
+    <AnimatedSection className="py-24 bg-gray-100">
       <div className="max-w-4xl mx-auto px-6 text-center">
         <h2 className="text-2xl font-semibold">The Nuvantage Difference</h2>
 
@@ -15,6 +17,6 @@ export default function AboutCTA() {
           Start a Conversation
         </button>
       </div>
-    </section>
+    </AnimatedSection>
   );
 }

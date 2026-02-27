@@ -1,8 +1,9 @@
 import ApproachCard from "./ApproachCard";
+import AnimatedSection from "./AnimatedSection";
 
 export default function Approach() {
   return (
-    <section className="py-20 bg-white">
+    <AnimatedSection className="bg-gray-50 py-20">
       <div className="max-w-7xl mx-auto px-6">
         <p className="text-orange-500 text-xs tracking-widest uppercase">
           Our Approach
@@ -44,6 +45,6 @@ export default function Approach() {
           />
         </div>
       </div>
-    </section>
+    </AnimatedSection>
   );
 }

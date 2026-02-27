@@ -1,12 +1,15 @@
-import logo from "../assets/logo.png";
+import footerLogo from "../assets/footerLogo.png";
 export default function Footer() {
   return (
     <footer className="bg-[#0C1533] text-gray-300 py-16">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-5 gap-8">
-        {/* Logo */}
+        {/* footerLogo */}
         <div>
-          <img src={logo} alt="logo" />
-          <div className="text-white font-bold text-lg mb-6">Nuvantage</div>
+          <img
+            src={footerLogo}
+            alt="logo"
+            className="text-white font-bold text-lg mb-6"
+          />
         </div>
 
         {/* Company */}

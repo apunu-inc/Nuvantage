@@ -7,11 +7,9 @@ import AboutCTA from "../components/AboutCTA";
 export default function About() {
   return (
     <>
-      <Navbar />
       <AboutHero />
       <AboutServices />
       <AboutCTA />
-      <Footer />
     </>
   );
 }

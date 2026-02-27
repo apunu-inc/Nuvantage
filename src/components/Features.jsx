@@ -1,8 +1,9 @@
 import FeatureCard from "./FeatureCard";
+import AnimatedSection from "./AnimatedSection";
 
 export default function Features() {
   return (
-    <section className="bg-gray-50 py-20">
+    <AnimatedSection className="bg-gray-50 py-20">
       <div className="mx-auto max-w-7xl px-6">
         <p className="text-orange-500 text-xs tracking-widest uppercase">
           Key Features
@@ -47,6 +48,6 @@ export default function Features() {
           />
         </div>
       </div>
-    </section>
+    </AnimatedSection>
   );
 }
