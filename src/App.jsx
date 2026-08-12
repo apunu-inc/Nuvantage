@@ -9,7 +9,6 @@ import ScrollToTop from "./utils/ScrollToTop";
 import { pageTransition } from "./animations/variants";
 import { useEffect } from "react";
 
-// google tracker
 function PageTracking() {
   const location = useLocation();
 
