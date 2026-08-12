@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import ScrollToTop from "./utils/ScrollToTop";
 import { pageTransition } from "./animations/variants";
+import { useEffect } from "react";
 
 function PageTracking() {
   const location = useLocation();
