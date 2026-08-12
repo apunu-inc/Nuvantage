@@ -1,10 +1,26 @@
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { initGA, trackPageView } from "./analytics";
+
 import { AnimatePresence, motion } from "framer-motion";
 import Layout from "./layout/Layout";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import ScrollToTop from "./utils/ScrollToTop";
 import { pageTransition } from "./animations/variants";
+
+function PageTracking() {
+  const location = useLocation();
+
+  useEffect(() => {
+    initGA();
+  }, []);
+
+  useEffect(() => {
+    trackPageView(location.pathname);
+  }, [location.pathname]);
+
+  return null;
+}
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -50,6 +66,7 @@ function AnimatedRoutes() {
 export default function App() {
   return (
     <BrowserRouter>
+      <PageTracking />
       <ScrollToTop />
       <AnimatedRoutes />
     </BrowserRouter>
