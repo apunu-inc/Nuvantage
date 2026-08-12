@@ -33,7 +33,7 @@ export default function Hero() {
             variants={fadeUp}
             className="text-3xl md:text-4xl font-bold leading-tight"
           >
-            HELLO HELLO Protecting Your Interests in <br />
+            Protecting Your Interests in <br />
             <span className="text-orange-500">High-Complexity Builds</span>
           </motion.h1>
 
